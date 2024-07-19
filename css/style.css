@@ -1,27 +1,77 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .main-container{
     height: 100vh;
     width: 100%;
-    background-color: black
+    background-color: black;
 }
 
 .navbar-container{
     height: 8vh;
     width: 100%;
-    background-color: white;
+    background-color: wheat;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.nav-logo-container,
-.nav-menu-container,
-.nav-icons-container {
-    height: 4vh;
-    width: 4%;
-    background-color: red;
+.navbar-items-container{
+    height: 60%;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
 }
+
+.nav-left,
+.nav-middle,
+.nav-right{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+}
+
+.nav-left{
+    justify-content: left;
+}
+.nav-middle{
+    justify-content: center;
+}
+.nav-right{
+    justify-content: right;
+}
+
+
+.nav-item-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons-1-container{
+    height: 100%;
+    width: 36px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon-1{
+    height: 70%;
+    width: 70%;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+
+
+
