@@ -3,6 +3,7 @@
     margin: 0;
     background: white;
     list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar-container{
@@ -18,8 +19,8 @@
     width: 100%;
     background-color: none;
     display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .nav-left,.nav-middle,.nav-right{
@@ -77,4 +78,49 @@
     width: 60%;
     border-radius: 50%;
     background-color: wheat;
+}
+
+
+
+
+.land-section{
+    display: flex;    
+}
+
+.land-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.greetings{
+    display: flex;
+    gap: 4px;
+}
+
+.greeting-sentence{
+    font-size: 20px;
+    font-weight:500;
+    color: #22252C;
+    background-color: none;
+}
+
+.greeting-icon{
+    height: 30px;
+}
+
+.land-header{
+    display: flex;
+    font-weight:900;
+    color: #6B08F0
+}
+#land-end,#land-developer{
+    color: #22252C;
+}
+
+.land-paragraph{
+    color: #828395;
 }
