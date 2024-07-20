@@ -4,6 +4,7 @@
     background: white;
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: inherit;
 }
 
 .navbar-container{
@@ -124,3 +125,33 @@
 .land-paragraph{
     color: #828395;
 }
+
+.land-buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.land-button{
+    height: 36px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22252C;
+    color: #22252C;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#land-button-2{  
+    background-color: #ECECEC;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+#land-button-1{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.lb-p{
+    color: white;
+}
+
