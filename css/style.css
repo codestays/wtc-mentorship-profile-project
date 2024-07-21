@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     position: fixed;
+    background-color: white;
 }
 
 .nav-items-container{
@@ -20,8 +21,8 @@
     width: 100%;
     background-color: none;
     display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .nav-left,.nav-middle,.nav-right{
@@ -96,43 +97,57 @@
     padding-top: 200px;
     padding-left: 60px;
     padding-right: 60px;
+    gap: 16px;
 }
 .greetings{
     display: flex;
     gap: 4px;
+    margin-bottom: -32px;
 }
 
 .greeting-sentence{
     font-size: 20px;
     font-weight:500;
     color: #22252C;
-    background-color: none;
 }
 
 .greeting-icon{
     height: 30px;
 }
 
-.land-header{
+.heading-container{
+    margin-left: -6px;
+}
+.land-header-1{
     display: flex;
-    font-weight:900;
-    color: #6B08F0
+    font-size: 96px;
+    font-weight:bolder;
+    color: #6B08F0;
+    margin-bottom: -46px;
 }
 #land-end,#land-developer{
     color: #22252C;
 }
+.land-header-2{
+    font-size: 96px;
+    font-weight:bolder;
+    color: #22252C;
+    margin-bottom: -18px;
+}
 
 .land-paragraph{
     color: #828395;
+    font-size: 20px;
+    width: 500px;
 }
 
 .land-buttons{
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 
 .land-button{
-    height: 36px;
+    height: 42px;
     width: 96px;
     display: flex;
     justify-content: center;
@@ -144,14 +159,35 @@
     cursor: pointer;
 }
 #land-button-2{  
+    width: 120px;
     background-color: #ECECEC;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 #land-button-1{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    
 }
 
+.lb-p-1{
+    font-weight: 600;
+}
 .lb-p{
     color: white;
+    font-weight: 600;
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .nv-list,.icons-circle-1 {
+        display: none;
+    }
+}
