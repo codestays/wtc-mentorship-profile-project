@@ -86,7 +86,7 @@
 
 
 .land-section{
-    display: flex;    
+    display: flex; 
 }
 
 .land-left{
@@ -94,15 +94,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    gap: 16px;
+    padding-top: 200px;   
     padding-left: 60px;
     padding-right: 60px;
-    gap: 16px;
 }
 .greetings{
     display: flex;
     gap: 4px;
     margin-bottom: -32px;
+    cursor: default;
 }
 
 .greeting-sentence{
@@ -117,6 +118,7 @@
 
 .heading-container{
     margin-left: -6px;
+    cursor: default;
 }
 .land-header-1{
     display: flex;
@@ -139,6 +141,7 @@
     color: #828395;
     font-size: 20px;
     width: 500px;
+    cursor: default;
 }
 
 .land-buttons{
@@ -177,8 +180,31 @@
 }
 
 
+.land-right{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 150px;   
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
-
+.land-circle-1{
+    height: 450px;
+    width: 450px;
+    margin-right: 100px;
+    border-radius: 225px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.land-circle-2{
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    background-color: blanchedalmond;
+}
 
 
 
