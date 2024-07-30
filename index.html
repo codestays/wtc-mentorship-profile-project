@@ -110,6 +110,34 @@
             color:#828395; font-size:20px; cursor:default;
         }
 
+        .intro-buttons{
+            display:flex; gap:10px; margin-top:10px;
+        }
+
+        .intro-button-1{
+            height:42px; width:100px; font-size: 10px; font-weight:600; display:flex; justify-content:center; align-items:center; border-radius: 10px; cursor: pointer; background-color:#22252C; color:#ECECEC;
+        }.ib-1{
+            width:80%; height:80%; background-color:none; display:flex; justify-content:center; align-items:center;
+        }
+
+        .intro-button-2{
+            height:42px; width:120px; font-size: 10px; font-weight:600; display:flex; justify-content:center; align-items:center; border-radius: 10px; cursor: pointer; background-color:#ECECEC; color:#22252C;
+        }.ib-2{
+            width:75%; height:75%; background-color:none; display:flex; justify-content:center; align-items:center;
+        }
+
+        .intro-right{
+            width:100%; height:100%; background-color:none; display:flex; justify-content:end;
+        }
+
+        .profile-picture-circle{
+            height:510px; width:510px; border-radius:50%; border: 1px solid; border-color:#828395; display:flex; justify-content:center; align-items:center;
+        }
+        
+        .profile-picture{
+            height:86%; width:86%; border-radius:50%; background-color: deeppink;
+        }
+
 
         @media (width > 1100px){
             .nav-menu-icon{
@@ -178,6 +206,23 @@
                             I'll help you build beautiful websites 
                             your users will love.
                         </p>
+                        <div class="intro-buttons">
+                            <div class="intro-button-1">
+                                <div class="ib-1">
+                                    <p>Get In Touch</p>
+                                </div>
+                            </div>
+                            <div class="intro-button-2">
+                                <div class="ib-2">
+                                    <p>Browse projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-right">
+                        <div class="profile-picture-circle">
+                            <img src="./images/luni.jpeg" alt="profile" class="profile-picture"></img>
+                        </div>
                     </div>
                 </div>
             </div>
