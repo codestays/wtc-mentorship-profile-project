@@ -7,15 +7,97 @@
     </head>
 
     <style>
+        *{
+            list-style: none; padding: 0; margin: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
         
+        .navbar-container{
+            width:100%; height:70px; background-color:white; display:flex; align-items:center; position:fixed;
+        }
+        .navbar-item-container{
+            width:100%; height:40px; display:flex; margin-left:50px; margin-right:50px; background-color:none;
+        }
+
+        .nav-left
+        {
+            width:100%; height:100%; display:flex; align-items:center; background-color:none;
+        }
+
+        .nav-name{
+            font:20px; font-weight:800; color:#22252C; cursor:pointer;
+        }#nav-name-end{
+            color:#6B08F0;
+        }
+
+        .nav-middle
+        {
+            width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+        }
+        .nav-menu{
+            font:20px; display:flex; gap:40px; color:#828395;
+        }
+        .nv-list{
+            cursor:pointer;
+        }
+        
+        .nav-right{
+            width:100%; height:100%; display:flex; align-items:center; justify-content:end; background-color:none;
+        }
+
+        .nav-circle-1{
+            width:40px; height:40px; border-radius:50%; background-color:#22252C; display:flex; align-items:center; justify-content:center; cursor:pointer;
+        }.nv-msg-icon{
+            width:60%; height:60%; border-radius:50%; background-color:#ECECEC;
+        }
+
+        .nav-menu-icon{
+            width:24px; height:40px; display:flex; flex-direction:column; justify-content:center; cursor:pointer; background-color:none;
+        }
+
+        .nav-menu-line{
+            width:100%; height:4px; background-color:#22252C; margin-bottom:4px;
+        }.nav-menu-line-last{
+            width:100%; height:4px; background-color:#22252C;
+        }
+
+        .space-after-navbar{
+            height:10px; width:100%; padding-top:70px; background-color:none;
+        }
+
+
     </style>
 
     <body>
-        <div>
+        <container>
             <div class="navbar-container">
-                
+                <div class="navbar-item-container">
+                    <div class="nav-left">
+                        <p class="nav-name">Ernest</p>
+                        <p class="nav-name" id="nav-name-end">.</p>
+                    </div>
+                    <div class="nav-middle">
+                        <ul class="nav-menu">
+                            <li class="nv-list">Home</li>
+                            <li class="nv-list">Projects</li>
+                            <li class="nv-list">About</li>
+                        </ul>
+                    </div>
+                    <div class="nav-right">
+                        <div class="nav-circle-1">
+                            <div class="nv-msg-icon"></div>
+                        </div>
+                        <div class="nav-menu-icon">
+                            <div class="nav-menu-line"></div>
+                            <div class="nav-menu-line"></div>
+                            <div class="nav-menu-line-last"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <div class="space-after-navbar"></div>
+
+        </container>
     </body>
 </html>
