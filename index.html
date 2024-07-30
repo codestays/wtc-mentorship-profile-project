@@ -50,21 +50,46 @@
         .nav-circle-1{
             width:40px; height:40px; border-radius:50%; background-color:#22252C; display:flex; align-items:center; justify-content:center; cursor:pointer;
         }.nv-msg-icon{
-            width:60%; height:60%; border-radius:50%; background-color:#ECECEC;
+            width:60%; height:60%; border-radius:50%;
         }
 
         .nav-menu-icon{
             width:24px; height:40px; display:flex; flex-direction:column; justify-content:center; cursor:pointer; background-color:none;
         }
 
-        .nav-menu-line{
+        .nav-menu-line,.nav-menu-line-mid{
             width:100%; height:4px; background-color:#22252C; margin-bottom:4px;
         }.nav-menu-line-last{
             width:100%; height:4px; background-color:#22252C;
         }
 
+        /* create a space between the navbar and the intro section  */
         .space-after-navbar{
             height:10px; width:100%; padding-top:70px; background-color:none;
+        }
+
+        /* introduction section  */
+        .intro-container{
+            width:100%; height:560px; background-color:none; display:flex; justify-content:center; align-items:center;
+        }
+
+        .intro-item-container{
+            width:100%; height:510px; display:flex; margin-left:50px; margin-right:50px; align-items:center; background-color:none;
+        }
+
+        .intro-left{
+            width:100%; height:410px; background-color:none; display:flex; flex-direction:column; gap:10px
+        }
+
+        .greetings{
+            display:flex; gap:4px; cursor:default;
+        }
+
+        .greeting-sentence{
+            font-size:20px; font-weight:500; color:#22252C;
+        }
+        .greeting-icon{
+            height:30px;
         }
 
 
@@ -100,11 +125,13 @@
                     </div>
                     <div class="nav-right">
                         <div class="nav-circle-1">
-                            <div class="nv-msg-icon"></div>
+                            <svg fill="#ECECEC" width="800px" height="800px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" class="nv-msg-icon">
+                                <path d="M132,19.99219a104.1179,104.1179,0,0,0-104,104v84.33349a19.68877,19.68877,0,0,0,19.667,19.66651H132a104,104,0,0,0,0-208Zm0,184H52v-80a80,80,0,1,1,80,80Zm39.999-96a12.00028,12.00028,0,0,1-12,12h-60a12,12,0,0,1,0-24h60A12.00028,12.00028,0,0,1,171.999,107.99219Zm0,40a12.00028,12.00028,0,0,1-12,12h-60a12,12,0,0,1,0-24h60A12.00028,12.00028,0,0,1,171.999,147.99219Z"/>
+                            </svg>
                         </div>
                         <div class="nav-menu-icon">
                             <div class="nav-menu-line"></div>
-                            <div class="nav-menu-line"></div>
+                            <div class="nav-menu-line-mid"></div>
                             <div class="nav-menu-line-last"></div>
                         </div>
                     </div>
@@ -113,6 +140,18 @@
 
             <div class="space-after-navbar"></div>
 
+            <div class="intro-container">
+                <div class="intro-item-container">
+                    <div class="intro-left">
+                        <div class="greetings">
+                            <p class="greeting-sentence">
+                                Hey, I'm Ernest
+                            </p>
+                            <img class="greeting-icon" src="./images/waving-hand-svgrepo-com 1.svg" alt="waving hand">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </container>
     </body>
 </html>
