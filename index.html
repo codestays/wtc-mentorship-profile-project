@@ -60,9 +60,10 @@
         }
 
         .nav-menu-line,.nav-menu-line-mid{
-            width:100%; height:4px; background-color:#22252C; margin-bottom:4px;
+            width:100%; height:4px; background-color:#22252C; margin-bottom:4px; transition:transform 0.2s ease;
         }.nav-menu-line-last{
-            width:100%; height:4px; background-color:#22252C;
+            width:100%; height:4px; background-color:#22252C; transition:transform 0.2s ease;
+            
         }
 
         /* create a space between the navbar and the intro section  */
@@ -152,6 +153,11 @@
         .nav-menu-icon.active .nav-menu-line-mid{
             display: none;
         }
+
+        .nav-menu-icon.active .sidebar-container{
+            transform: rotate(45deg);
+        }
+        
 
         @media (width > 1100px){
             .nav-menu-icon{
@@ -254,16 +260,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="sidebar-container" style="position:fixed; top:70px; right:0; width:100%; height:100vh; transform: translateX(100%); transition:transform 0.2s ease; background-color:#ffffff;"></div>
         </container>
 
         <script>
             const navMenuIcon = document.querySelector('.nav-menu-icon');
+            const sidebar = document.querySelector('.sidebar-container');
+
+            let open = false;
             function toggleCross(){
                 navMenuIcon.classList.toggle('active');
+                if(!open){
+                    sidebar.style.transform = 'translateX(0)';
+                    open = true
+                }
+                else{
+                    sidebar.style.transform = 'translateX(100%)';
+                    open = !open;
+                }
             }
     
             navMenuIcon.addEventListener('click', toggleCross);
-    
         </script>
     </body>
 </html>
