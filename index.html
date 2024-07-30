@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
+    
+
     <style>
         *{
             list-style: none; padding: 0; margin: 0;
@@ -139,6 +141,18 @@
         }
 
 
+        .nav-menu-icon.active .nav-menu-line{
+            margin-bottom:-4px;
+            transform: rotate(45deg);
+        }
+        .nav-menu-icon.active .nav-menu-line-last{
+            transform: rotate(-45deg);
+
+        }
+        .nav-menu-icon.active .nav-menu-line-mid{
+            display: none;
+        }
+
         @media (width > 1100px){
             .nav-menu-icon{
                 display:none;
@@ -148,6 +162,20 @@
         @media (width <= 1100px){
             .nav-circle-1,.nav-menu{
                 display:none;
+            }
+            .intro-item-container{
+                flex-direction:column;
+                width: 600px;
+            }
+
+            .intro-left{
+                align-items: center;
+                width:750px;
+            }.intro-paragraph{
+                width:460px;
+            }.intro-right{
+                justify-content:center;
+                margin-top:100px;
             }
         }
 
@@ -227,5 +255,15 @@
                 </div>
             </div>
         </container>
+
+        <script>
+            const navMenuIcon = document.querySelector('.nav-menu-icon');
+            function toggleCross(){
+                navMenuIcon.classList.toggle('active');
+            }
+    
+            navMenuIcon.addEventListener('click', toggleCross);
+    
+        </script>
     </body>
 </html>
